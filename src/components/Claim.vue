@@ -2,19 +2,19 @@
 <div class="claimWrapper">
     <h1 class="claim">SPACER</h1>
     <p class="subclaim">
-        Begin your journer through our amazing galaxy, and discover places you naver even heard of.    
+        Begin your journer through our amazing galaxy, and discover places you naver even heard of.
     </p>
     <p class="subclaim">
         Type anything space-related to start.
     </p>
-    
+
 </div>
 </template>
 
 <script>
 export default {
-    name: 'Claim',
-}
+  name: 'Claim',
+};
 </script>
 
 <style lang="scss" scoped>
@@ -24,15 +24,31 @@ export default {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        color: white;
     }
-    
+
     .claim {
         font-size: 50px;
         margin: 0;
+
+        @media (min-width: 768px) {
+            font-size: 80px;
+        }
+
+        @media (min-width: 1024px) {
+            font-size: 100px;
+        }
     }
 
     .subClaim {
         margin: 20px 0 0 0;
         font-size: 13px;
+        font-weight: 400px;
+
+        @media (min-width: 768px) {
+            width: 500px;
+            font-size: 17px;
+            letter-spacing: 1px;
+        }
     }
 </style>
